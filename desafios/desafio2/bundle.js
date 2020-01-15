@@ -20,13 +20,12 @@ const filtro = usuarios.filter(function (item) {
 const find = usuarios.find(function (item) {
   return item.empresa === 'Rocketseat';
 });
-const uniao = usuarios.reduce(function (c, n) {
-  if (c.idade * 2 <= 50) {
-    return c;
-  }
+const uniao = usuarios.map(function (item) {
+  var multiplicacao = item.idade * 2;
 
-  c.push(n);
-  return c;
+  if (multiplicacao <= 50) {
+    return item;
+  }
 });
 console.log(idades);
 console.log(filtro);

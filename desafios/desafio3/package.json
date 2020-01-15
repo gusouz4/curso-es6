@@ -1,0 +1,17 @@
+{
+  "name": "curso-es6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gusouz4/curso-es6.git",
+  "author": "gusouz4 <gusouza.1@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.8.3"
+  },
+  "scripts": {
+    "dev": "babel ./main.js -o bundle.js -w"
+  }
+}
