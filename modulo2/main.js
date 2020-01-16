@@ -1,10 +1,4 @@
-const nome = 'Gustavo';
-const idade = 20;
+import { soma, sub } from './funcoes';
 
-const usuario = {
-    nome,
-    idade,
-    empresa: 'Montreal',
-};
-
-console.log(usuario);
+console.log(soma(2,3));
+console.log(sub(4,2));
